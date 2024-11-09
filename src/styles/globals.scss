@@ -1,0 +1,39 @@
+@use 'normalize';
+@use 'fonts';
+@use 'variables' as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+body {
+  font-family: v.$font-family;
+  font-weight: normal;
+  color: v.$dark;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+  list-style-type: none;
+}
+
+a {
+  color: v.$dark;
+  text-decoration: none;
+}

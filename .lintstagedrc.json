@@ -1,0 +1,4 @@
+{
+  "**/*.scss": ["npm run format", "npm run stylelint"],
+  "**/*.{ts,tsx}": ["npm run format", "npm run eslint"]
+}
