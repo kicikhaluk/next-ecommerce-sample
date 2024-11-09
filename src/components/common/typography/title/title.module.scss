@@ -1,0 +1,44 @@
+@use '@/styles/mixin' as m;
+@use '@/styles/functions' as f;
+@use '@/styles/variables' as v;
+
+.title {
+  font-family: v.$font-family;
+  line-height: 1.5;
+
+  &_s_xl {
+    font-size: f.toRem(48);
+  }
+
+  &_s_lg {
+    font-size: f.toRem(32);
+  }
+
+  &_s_md {
+    font-size: f.toRem(28);
+  }
+
+  &_s_sm {
+    font-size: f.toRem(24);
+  }
+
+  &_s_xs {
+    font-size: f.toRem(20);
+  }
+
+  &_white {
+    color: v.$white;
+  }
+
+  &_dark {
+    color: v.$dark;
+  }
+
+  &_w_bold {
+    font-weight: 700;
+  }
+
+  &_w_medium {
+    font-weight: 700;
+  }
+}
