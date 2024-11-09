@@ -1,0 +1,40 @@
+.grid {
+  --column: 1;
+  --gap: 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(var(--column), 1fr);
+  gap: var(--gap);
+
+  &_c_2 {
+    --column: 2;
+  }
+
+  &_c_3 {
+    --column: 3;
+  }
+
+  &_c_4 {
+    --column: 4;
+  }
+
+  &_g_0 {
+    --gap: 0;
+  }
+
+  &_g_0\.5 {
+    --gap: 0.5rem;
+  }
+
+  &_g_1 {
+    --gap: 1rem;
+  }
+
+  &_g_2 {
+    --gap: 2rem;
+  }
+
+  &_item {
+    height: 100%;
+  }
+}
