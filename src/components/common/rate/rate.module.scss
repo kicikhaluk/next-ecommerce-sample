@@ -1,0 +1,43 @@
+@use '@/styles/variables' as v;
+@use '@/styles/functions' as f;
+
+.rate {
+  display: inline-flex;
+  align-items: center;
+
+  &_star {
+    width: f.toRem(24);
+    height: f.toRem(24);
+    stroke-width: 1.5;
+    transition: transform 0.2s ease-in-out;
+
+    &_full {
+      fill: v.$orange;
+      stroke: v.$orange;
+    }
+
+    &_half {
+      fill: v.$orange;
+      stroke: v.$orange;
+    }
+
+    &_empty {
+      fill: none;
+      stroke: v.$gray;
+    }
+  }
+
+  &_interactive {
+    cursor: pointer;
+
+    .rate_star {
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &_readonly {
+    pointer-events: none;
+  }
+}
