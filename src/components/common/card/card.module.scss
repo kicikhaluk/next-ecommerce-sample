@@ -1,0 +1,27 @@
+@use '@/styles/variables' as v;
+@use '@/styles/functions' as f;
+
+.card {
+  position: relative;
+  height: 100%;
+  border-radius: v.$border-radius;
+  box-shadow: v.$box-shadow;
+  border: 1px solid v.$light;
+
+  &_cover {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: f.toRem(250);
+
+    &_img {
+      display: block;
+      max-width: 100%;
+      border-radius: v.$border-radius v.$border-radius 0 0;
+    }
+  }
+
+  &_meta {
+    padding: f.toRem(16);
+  }
+}
