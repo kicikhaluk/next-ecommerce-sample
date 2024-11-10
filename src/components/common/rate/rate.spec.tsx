@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import Rate from './rate.component';
 
@@ -42,6 +43,17 @@ describe('UI/Readonly Rate', () => {
 
     expect(allStars).toHaveLength(10);
   });
+
+  it('should not call onChange fn', () => {
+    const handleChange = jest.fn();
+    const { container } = render(<Rate value={3} onChange={handleChange} />);
+
+    const stars = container.querySelectorAll('.rate_star');
+
+    fireEvent.click(stars[2]);
+
+    expect(handleChange).not.toHaveBeenCalled();
+  });
 });
 
 describe('UI/Interactive Rate', () => {
@@ -68,7 +80,7 @@ describe('UI/Interactive Rate', () => {
     expect(fullStars).toHaveLength(3);
   });
 
-  it('resets visual state on mouse leave', () => {
+  it('should resets value state on mouse leave', () => {
     const { container } = render(<Rate value={0} readonly={false} />);
     const stars = container.querySelectorAll('.rate_star');
     const parent = container.querySelector('.rate_interactive');
