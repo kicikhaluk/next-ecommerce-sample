@@ -9,3 +9,4 @@ export { Grid } from './common/grid';
 export { Tab } from './common/tab';
 
 export { ProductCard } from './product-card';
+export { CommentCard } from './comment-card';
