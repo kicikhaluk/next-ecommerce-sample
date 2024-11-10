@@ -17,7 +17,6 @@ const CardCover = ({ src, alt }: ICardCover) => {
         alt={alt}
         sizes='100%'
         fill
-        objectFit='cover'
       />
     </div>
   );

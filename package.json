@@ -10,7 +10,7 @@
     "lint-staged": "lint-staged",
     "format": "prettier --ignore-pattern .gitignore --write .",
     "stylelint": "stylelint \"**/*.scss\"",
-    "eslint": "eslint --ignore-pattern .gitignore .",
+    "eslint": "eslint --ignore-pattern .gitignore ./src",
     "prepare": "husky",
     "release": "standard-version",
     "test": "jest",

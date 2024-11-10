@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import Card, { default as CardComp } from './card.component';
+import { default as CardComp } from './card.component';
 
 import { Title, Text } from '../typography';
 
@@ -24,10 +24,10 @@ type Story = StoryObj<typeof meta>;
 export const Basic: Story = {
   args: {
     children: (
-      <Card.Meta>
+      <CardComp.Meta>
         <Title>Card Title</Title>
         <Text>Card Text</Text>
-      </Card.Meta>
+      </CardComp.Meta>
     ),
   },
 };
@@ -36,11 +36,14 @@ export const WithCover: Story = {
   args: {
     children: (
       <>
-        <Card.Cover src='https://picsum.photos/200' alt='placeholder image' />
-        <Card.Meta>
+        <CardComp.Cover
+          src='https://picsum.photos/200'
+          alt='placeholder image'
+        />
+        <CardComp.Meta>
           <Title>Card Title</Title>
           <Text>Card Text</Text>
-        </Card.Meta>
+        </CardComp.Meta>
       </>
     ),
   },

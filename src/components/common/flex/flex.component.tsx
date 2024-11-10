@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import styles from './flex.module.scss';
 
-interface IFlex {
+export interface IFlex {
   as?: keyof JSX.IntrinsicElements;
   direction?: 'column-reverse' | 'column' | 'row-reverse' | 'row';
   alignItems?: 'flex-start' | 'center' | 'flex-end' | 'strech' | 'baseline';

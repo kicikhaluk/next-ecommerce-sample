@@ -1,1 +1,1 @@
-export { default as Flex } from './flex.component';
+export { default as Flex, type IFlex } from './flex.component';
