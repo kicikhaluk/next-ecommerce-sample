@@ -9,7 +9,7 @@ import styles from './carousel.module.scss';
 import CarouselItem from './carousel-item.component';
 
 export interface ICarousel {
-  images: { src: string; alt: string }[];
+  images: { src: string; alt?: string }[];
 }
 
 const Carousel = ({ images }: ICarousel) => {
@@ -32,7 +32,7 @@ const Carousel = ({ images }: ICarousel) => {
           <CarouselItem
             key={index}
             src={image.src}
-            alt={image.alt}
+            alt={image.alt ?? 'Describes product'}
             className={index === currentIndex ? styles.active : ''}
           />
         ))}

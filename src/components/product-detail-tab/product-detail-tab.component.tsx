@@ -1,3 +1,4 @@
+'use client';
 import { Text, Flex, Tab, Title, CommentCard } from '@/components';
 import { type IProduct } from '@/constants/product';
 

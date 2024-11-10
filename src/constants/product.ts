@@ -31,6 +31,21 @@ export interface IProduct {
   thumbnail: string;
 }
 
+export const images = [
+  {
+    src: 'https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/1.png',
+    alt: 'Placeholder 1',
+  },
+  {
+    src: 'https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png',
+    alt: 'Placeholder 2',
+  },
+  {
+    src: 'https://cdn.dummyjson.com/products/images/beauty/Powder%20Canister/1.png',
+    alt: 'Placeholder 3',
+  },
+];
+
 export const products: IProduct[] = [
   {
     id: 1,

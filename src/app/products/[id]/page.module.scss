@@ -1,0 +1,20 @@
+@use '@/styles/variables' as v;
+@use '@/styles/functions' as f;
+@use '@/styles/mixin' as m;
+
+.page {
+  max-width: v.$website-width;
+  margin: 0 auto;
+  padding: f.toRem(16);
+
+  &_showcase {
+    & > * {
+      flex: 1;
+    }
+
+    @include m.desktop-sm {
+      flex-direction: row;
+      gap: f.toRem(16);
+    }
+  }
+}

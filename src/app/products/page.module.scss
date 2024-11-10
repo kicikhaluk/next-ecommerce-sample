@@ -1,0 +1,23 @@
+@use '@/styles/variables' as v;
+@use '@/styles/functions' as f;
+@use '@/styles/mixin' as m;
+
+.page {
+  max-width: v.$website-width;
+  margin: 0 auto;
+  padding: f.toRem(16);
+
+  .products {
+    @include m.tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include m.desktop-sm {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include m.desktop {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
