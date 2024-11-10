@@ -1,0 +1,11 @@
+@use '@/styles/functions' as f;
+@use '@/styles/variables' as v;
+
+.avatar {
+  position: relative;
+  width: f.toRem(48);
+  height: f.toRem(48);
+  border-radius: 50%;
+  box-shadow: v.$box-shadow-sm;
+  overflow: hidden;
+}
