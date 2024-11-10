@@ -27,6 +27,7 @@
   }
 
   &_content {
+    padding: f.toRem(16);
     position: relative;
     overflow: hidden;
   }
