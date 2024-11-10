@@ -10,3 +10,4 @@ export { Tab } from './common/tab';
 
 export { ProductCard } from './product-card';
 export { CommentCard } from './comment-card';
+export { ProductDetailTab } from './product-detail-tab';
