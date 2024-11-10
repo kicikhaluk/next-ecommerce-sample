@@ -3,6 +3,7 @@ export { Avatar } from './common/avatar';
 export { VSpacer } from './common/vspacer';
 export { Flex, type IFlex } from './common/flex';
 export { Rate } from './common/rate';
+export { Carousel } from './common/carousel';
 
 export { Card } from './common/card';
 export { Grid } from './common/grid';
