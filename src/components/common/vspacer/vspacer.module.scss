@@ -1,0 +1,27 @@
+@use '@/styles/functions' as f;
+
+.spacer {
+  --spacing: 1rem;
+
+  margin-bottom: var(--spacing);
+
+  &_0 {
+    --spacing: 0;
+  }
+
+  &_1 {
+    --spacing: 1rem;
+  }
+
+  &_2 {
+    --spacing: 2rem;
+  }
+
+  &_3 {
+    --spacing: 3rem;
+  }
+
+  &_4 {
+    --spacing: 4rem;
+  }
+}
