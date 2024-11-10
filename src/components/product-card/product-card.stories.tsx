@@ -74,7 +74,7 @@ const meta = {
     ),
   ],
   args: {
-    product,
+    product: product,
   },
 } satisfies Meta<typeof ProductCardComp>;
 

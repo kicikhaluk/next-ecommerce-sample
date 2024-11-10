@@ -1,0 +1,49 @@
+@use '@/styles/variables' as v;
+@use '@/styles/functions' as f;
+
+.tab {
+  width: 100%;
+
+  &_list {
+    display: flex;
+    border-bottom: 1px solid v.$gray;
+  }
+
+  &_trigger {
+    padding: f.toRem(8) f.toRem(16);
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: v.$light;
+    }
+
+    &.active {
+      border-bottom: 2px solid v.$orange;
+      color: v.$orange;
+    }
+  }
+
+  &_content {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &_pane {
+    opacity: 0;
+    transform: translateX(f.toRem(20));
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+    position: absolute;
+    width: 100%;
+
+    &.active {
+      opacity: 1;
+      transform: translateX(0);
+      position: relative;
+    }
+  }
+}

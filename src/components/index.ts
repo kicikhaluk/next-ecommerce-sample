@@ -6,5 +6,6 @@ export { Rate } from './common/rate';
 
 export { Card } from './common/card';
 export { Grid } from './common/grid';
+export { Tab } from './common/tab';
 
 export { ProductCard } from './product-card';
