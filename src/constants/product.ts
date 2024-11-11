@@ -31,7 +31,7 @@ export interface IProduct {
   thumbnail: string;
 }
 
-export const images = [
+export const IMAGES = [
   {
     src: 'https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/1.png',
     alt: 'Placeholder 1',
@@ -46,7 +46,7 @@ export const images = [
   },
 ];
 
-export const products: IProduct[] = [
+export const PRODUCTS: IProduct[] = [
   {
     id: 1,
     title: 'Essence Mascara Lash Princess',

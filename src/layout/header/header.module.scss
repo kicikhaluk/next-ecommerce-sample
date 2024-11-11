@@ -1,0 +1,36 @@
+@use '@/styles/functions' as f;
+@use '@/styles/variables' as v;
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: f.toRem(24);
+  background-color: v.$light;
+  box-shadow: v.$box-shadow-sm;
+  z-index: 99;
+
+  .button {
+    padding: f.toRem(12);
+    background-color: v.$orange;
+    color: v.$white;
+    border: none;
+    border-radius: v.$border-radius;
+    font-size: f.toRem(16);
+    cursor: pointer;
+    transition:
+      background-color 0.3s ease,
+      opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:disabled {
+      background-color: v.$gray;
+      cursor: not-allowed;
+    }
+  }
+}
