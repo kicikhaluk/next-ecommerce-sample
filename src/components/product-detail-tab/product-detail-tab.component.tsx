@@ -18,7 +18,6 @@ const ProductTabs = ({ product }: IProductTabs) => {
     reviews,
   } = product;
 
-  console.log(product);
   return (
     <Tab defaultActiveTab='specification'>
       <Tab.List>
