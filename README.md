@@ -27,6 +27,8 @@ Mock Users and passwords can be found in src/constants/users
 	npm run test
 ```
 
+- TODO: Complete tests for all components
+
 ### UI Docs
 
 ```bash
