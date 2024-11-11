@@ -1,0 +1,51 @@
+@use '@/styles/variables' as v;
+@use '@/styles/functions' as f;
+
+.form_elements {
+  label {
+    display: block;
+    margin-bottom: f.toRem(8);
+    color: v.$dark;
+  }
+
+  textarea {
+    width: 100%;
+    padding: f.toRem(8);
+    border: 1px solid v.$gray;
+    border-radius: v.$border-radius;
+    font-size: f.toRem(16);
+    color: v.$dark;
+
+    &:focus {
+      outline: none;
+      border-color: v.$orange;
+    }
+  }
+}
+
+.button {
+  padding: f.toRem(12);
+  background-color: v.$orange;
+  color: v.$white;
+  border: none;
+  border-radius: v.$border-radius;
+  font-size: f.toRem(16);
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:disabled {
+    background-color: v.$gray;
+    cursor: not-allowed;
+  }
+}
+
+.error {
+  color: v.$danger;
+  margin-bottom: f.toRem(16);
+}

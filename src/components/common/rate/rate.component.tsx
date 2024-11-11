@@ -14,17 +14,15 @@ export interface IRate {
 }
 
 export default function Rate({
-  value: initialValue,
+  value,
   max = 5,
   readonly = true,
   onChange,
 }: IRate) {
-  const [value, setValue] = React.useState(initialValue);
   const [hoverValue, setHoverValue] = React.useState(0);
 
   const handleClick = (newValue: number) => {
     if (!readonly) {
-      setValue(newValue);
       onChange?.(newValue);
     }
   };

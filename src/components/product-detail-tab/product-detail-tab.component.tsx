@@ -1,5 +1,7 @@
 'use client';
 import { Text, Flex, Tab, Title, CommentCard } from '@/components';
+import { ReviewForm } from './review-form/review.form';
+
 import { type IProduct } from '@/constants/product';
 
 interface IProductTabs {
@@ -15,6 +17,8 @@ const ProductTabs = ({ product }: IProductTabs) => {
     warrantyInformation,
     reviews,
   } = product;
+
+  console.log(product);
   return (
     <Tab defaultActiveTab='specification'>
       <Tab.List>
@@ -47,8 +51,12 @@ const ProductTabs = ({ product }: IProductTabs) => {
         </Tab.Pane>
         <Tab.Pane id='reviews'>
           <Flex direction='column' gap={1}>
-            {reviews.map((review) => (
-              <CommentCard key={review.date} review={review} />
+            <ReviewForm
+              key={`${product.id}-review-form`}
+              productId={product.id}
+            />
+            {reviews.map((review, i) => (
+              <CommentCard key={i} review={review} />
             ))}
           </Flex>
         </Tab.Pane>

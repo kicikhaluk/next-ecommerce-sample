@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyToken } from '@/lib/auth';
-import { PRODUCTS } from '@/constants/product';
 
 export async function GET(
   request: NextRequest,
@@ -12,8 +11,8 @@ export async function GET(
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
-  const id = parseInt(params.id);
-  const product = PRODUCTS.find((p) => p.id === id);
+  const response = await fetch(`https://dummyjson.com/products/${params.id}`);
+  const product = await response.json();
 
   if (!product) {
     return NextResponse.json({ error: 'Element not found' }, { status: 404 });
