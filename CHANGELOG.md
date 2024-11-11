@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/kicikhaluk/next-ecommerce-sample/compare/v0.0.1...v0.1.0) (2024-11-11)
+
+
+### Features
+
+* **auth:** auth implemented ([bae43e0](https://github.com/kicikhaluk/next-ecommerce-sample/commit/bae43e0c920d273a8c8a561c870d4fa87a6139ca))
+
 ### [0.0.1](https://github.com/kicikhaluk/next-ecommerce-sample/compare/v0.0.0...v0.0.1) (2024-11-10)
 
 ### Features
