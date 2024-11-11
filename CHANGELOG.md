@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/kicikhaluk/next-ecommerce-sample/compare/v0.1.0...v0.1.1) (2024-11-11)
+
+
+### Features
+
+* **comment:** comment actions added ([77d79df](https://github.com/kicikhaluk/next-ecommerce-sample/commit/77d79df2383cf7b6aecc10136ab3286307451098))
+
+
+### Bug Fixes
+
+* **console:** console.log removed ([f7497f6](https://github.com/kicikhaluk/next-ecommerce-sample/commit/f7497f6d9041a84e88fdfce356ad50b98a441a67))
+
 ## [0.1.0](https://github.com/kicikhaluk/next-ecommerce-sample/compare/v0.0.1...v0.1.0) (2024-11-11)
 
 
